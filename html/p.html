@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Fundamentals</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>HTML Fundamentals</h1>
+        <nav>
+            <a href="#intro">Introduction</a>
+            <a href="#table">Table</a>
+            <a href="#form">Form</a>
+            <a href="#images">Images</a>
+        </nav>
+    </header>
+
+    <!-- Article Section -->
+    <article id="intro">
+        <h2>What is HTML?</h2>
+        <p>HTML stands for Hypertext Markup Language, and it is used to structure web content.</p>
+    </article>
+
+    <!-- Block & Inline Elements -->
+    <section>
+        <h2>Block and Inline Elements</h2>
+        <p>This is a <strong>block-level</strong> element. <span>This is an <em>inline</em> element.</span></p>
+    </section>
+
+    <!-- Tables -->
+    <section id="table">
+        <h2>Example Table</h2>
+        <table border="1">
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+            </tr>
+            <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Forms -->
+    <section id="form">
+        <h2>Contact Form</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <!-- Lists -->
+    <section>
+        <h2>Unordered List</h2>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+        </ul>
+
+        <h2>Ordered List</h2>
+        <ol>
+            <li>First Item</li>
+            <li>Second Item</li>
+        </ol>
+    </section>
+
+    <!-- Anchors & Navigation -->
+    <section>
+        <h2>Navigation Links</h2>
+        <p><a href="https://example.com" target="_blank">Go to Example</a></p>
+    </section>
+
+    <!-- Images -->
+    <section id="images">
+        <h2>Image Example</h2>
+        <img src="html\myphoto.jpg" alt="Placeholder Image">
+    </section>
+
+    <!-- Local & Session Storage -->
+    <section>
+        <h2>Local Storage Example</h2>
+        <button onclick="saveToLocalStorage()">Save Data</button>
+        <p id="localStorageMessage"></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Developed by Sultan Alam</p>
+    </footer>
+
+    <!--  -->
+    <script>
+        // Event for Local Storage
+        function saveToLocalStorage() {
+            localStorage.setItem('username', 'Sultan Alam');
+            document.getElementById('localStorageMessage').textContent = "Data saved in local storage!";
+        }
+    </script>
+
+</body>
+</html>
